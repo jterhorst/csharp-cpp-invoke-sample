@@ -16,6 +16,7 @@ namespace csharpcppinvokesample
             Console.WriteLine(sample.Add(1.1, 2.2));
             Console.WriteLine(sample.Subtract(1.1, 2.2));
             Console.WriteLine(sample.Multiply(1.1, 2.2));
+            Console.WriteLine(sample.Print());
         }
     }
 }

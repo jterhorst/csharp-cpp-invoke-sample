@@ -3,7 +3,7 @@
 
 #include "stdafx.h"
 #include "unmanaged.h"
-
+#include <string>
 
 // This is an example of an exported variable
 UNMANAGED_API int nunmanaged=0;
@@ -34,4 +34,9 @@ double Cunmanaged::Subtract(double a, double b)
 double Cunmanaged::Multiply(double a, double b)
 {
 	return a*b;
+}
+
+std::string Cunmanaged::Print(void)
+{
+	return std::string("Hello World");
 }

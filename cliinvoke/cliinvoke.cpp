@@ -12,5 +12,6 @@ int main(array<System::String ^> ^args)
     Console::WriteLine(clisample->Add(1.1,2.2));
 	Console::WriteLine(clisample->Subtract(1.1, 2.2));
 	Console::WriteLine(clisample->Multiply(1.1, 2.2));
+	Console::WriteLine(clisample->Print());
     return 0;
 }

@@ -2,7 +2,9 @@
 
 #pragma once
 #include"unmanaged.h"
+#include<string>
 
+using namespace std;
 using namespace System;
 
 namespace cliwrapper 
@@ -25,6 +27,11 @@ namespace cliwrapper
 		double Multiply(double a, double b)
 		{
 			return ptr->Multiply(a, b);
+		}
+		String^ Print()
+		{
+			String^ str = gcnew String(ptr->Print().c_str());
+			return str;
 		}
 	private:
 		Cunmanaged *ptr;

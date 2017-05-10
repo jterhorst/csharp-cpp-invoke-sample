@@ -9,7 +9,7 @@
 #else
 #define UNMANAGED_API __declspec(dllimport)
 #endif
-
+#include<string>
 // This class is exported from the unmanaged.dll
 class UNMANAGED_API Cunmanaged {
 public:
@@ -17,6 +17,7 @@ public:
 	double Add(double, double);
 	double Subtract(double, double);
 	double Multiply(double, double);
+	std::string Print(void);
 	// TODO: add your methods here.
 };
 

@@ -36,7 +36,12 @@ double Cunmanaged::Multiply(double a, double b)
 	return a*b;
 }
 
+double Cunmanaged::Divide(double a, double b)
+{
+	return a/b;
+}
+
 std::string Cunmanaged::Print(void)
 {
-	return std::string("Hello World");
+	return std::string("Result");
 }

@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cliinvoke", "cliinvoke\clii
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "win32invoke", "win32invoke\win32invoke.vcxproj", "{3E97B43E-FE3D-4CA7-8D53-9C75AA509F06}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpfinvoke", "Wpfinvoke\Wpfinvoke.csproj", "{0566E9B4-6770-4E25-8195-3E5F5CDA1B71}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,18 @@ Global
 		{3E97B43E-FE3D-4CA7-8D53-9C75AA509F06}.Release|x64.Build.0 = Release|x64
 		{3E97B43E-FE3D-4CA7-8D53-9C75AA509F06}.Release|x86.ActiveCfg = Release|Win32
 		{3E97B43E-FE3D-4CA7-8D53-9C75AA509F06}.Release|x86.Build.0 = Release|Win32
+		{0566E9B4-6770-4E25-8195-3E5F5CDA1B71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0566E9B4-6770-4E25-8195-3E5F5CDA1B71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0566E9B4-6770-4E25-8195-3E5F5CDA1B71}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0566E9B4-6770-4E25-8195-3E5F5CDA1B71}.Debug|x64.Build.0 = Debug|Any CPU
+		{0566E9B4-6770-4E25-8195-3E5F5CDA1B71}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0566E9B4-6770-4E25-8195-3E5F5CDA1B71}.Debug|x86.Build.0 = Debug|Any CPU
+		{0566E9B4-6770-4E25-8195-3E5F5CDA1B71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0566E9B4-6770-4E25-8195-3E5F5CDA1B71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0566E9B4-6770-4E25-8195-3E5F5CDA1B71}.Release|x64.ActiveCfg = Release|Any CPU
+		{0566E9B4-6770-4E25-8195-3E5F5CDA1B71}.Release|x64.Build.0 = Release|Any CPU
+		{0566E9B4-6770-4E25-8195-3E5F5CDA1B71}.Release|x86.ActiveCfg = Release|Any CPU
+		{0566E9B4-6770-4E25-8195-3E5F5CDA1B71}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

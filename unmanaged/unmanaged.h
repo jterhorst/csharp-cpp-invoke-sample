@@ -17,6 +17,7 @@ public:
 	double Add(double, double);
 	double Subtract(double, double);
 	double Multiply(double, double);
+	double Divide(double, double);
 	std::string Print(void);
 	// TODO: add your methods here.
 };

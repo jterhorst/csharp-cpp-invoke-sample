@@ -28,6 +28,10 @@ namespace cliwrapper
 		{
 			return ptr->Multiply(a, b);
 		}
+		double Divide(double a, double b)
+		{
+			return ptr->Divide(a, b);
+		}
 		String^ Print()
 		{
 			String^ str = gcnew String(ptr->Print().c_str());

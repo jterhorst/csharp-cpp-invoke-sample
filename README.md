@@ -11,10 +11,10 @@ C# C++ C++/CLI invoke samples
 ## Caller
 
 ```
-**unmanaged(win32/native C++/dll)** <-- **win32invoke(win32/native C++/console)**
-                                    <-- **CLIwrapper(C++/CLI/dll)** <-- **cliinvoke(C++/CLI/console)**
-                                                                    <-- **csharpcppinvokesample(C#/console)**
-                                                                    <-- **Wpfinvoke(C#/WPF)**
+unmanaged(win32/native C++/dll) <-- win32invoke(win32/native C++/console)
+                                <-- CLIwrapper(C++/CLI/dll) <-- cliinvoke(C++/CLI/console)
+                                                            <-- csharpcppinvokesample(C#/console)
+                                                            <-- Wpfinvoke(C#/WPF)
 ```
 
 ## Prerequisites

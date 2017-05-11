@@ -7,37 +7,28 @@
 using namespace std;
 using namespace System;
 
-namespace cliwrapper 
+namespace cliwrapper
 {
-
 	public ref class wrapper
 	{
 	public:
 		wrapper() { ptr = new Cunmanaged; }
 		~wrapper() { this->!wrapper(); }
 		!wrapper() { delete ptr; }
-		double Add(double a, double b)
+		double Eval(String^ x)
 		{
-			return ptr->Add(a, b);
-		}
-		double Subtract(double a, double b)
-		{
-			return ptr->Subtract(a, b);
-		}
-		double Multiply(double a, double b)
-		{
-			return ptr->Multiply(a, b);
-		}
-		double Divide(double a, double b)
-		{
-			return ptr->Divide(a, b);
-		}
-		String^ Print()
-		{
-			String^ str = gcnew String(ptr->Print().c_str());
-			return str;
+			string input = "";
+			MarshalString(x, input);
+			return ptr->Eval(input);
 		}
 	private:
+		void MarshalString(String ^ s, string& os) {
+			using namespace Runtime::InteropServices;
+			const char* chars =
+				(const char*)(Marshal::StringToHGlobalAnsi(s)).ToPointer();
+			os = chars;
+			Marshal::FreeHGlobal(IntPtr((void*)chars));
+		}
 		Cunmanaged *ptr;
 		// TODO: Add your methods for this class here.
 	};

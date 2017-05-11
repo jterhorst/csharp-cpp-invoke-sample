@@ -9,9 +9,12 @@ int main(array<System::String ^> ^args)
 {
 	cliwrapper::wrapper ^clisample;
 	clisample = gcnew cliwrapper::wrapper;
-    Console::WriteLine(clisample->Add(1.1,2.2));
-	Console::WriteLine(clisample->Subtract(1.1, 2.2));
-	Console::WriteLine(clisample->Multiply(1.1, 2.2));
-	Console::WriteLine(clisample->Print());
+	String^ input;
+	input = gcnew String("");
+	while (true)
+	{
+		input=Console::ReadLine();
+		Console::WriteLine(clisample->Eval(input));
+	}
     return 0;
 }

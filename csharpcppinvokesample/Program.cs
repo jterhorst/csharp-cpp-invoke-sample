@@ -13,10 +13,12 @@ namespace csharpcppinvokesample
         {
             cliwrapper.wrapper sample;
             sample = new cliwrapper.wrapper();
-            Console.WriteLine(sample.Add(1.1, 2.2));
-            Console.WriteLine(sample.Subtract(1.1, 2.2));
-            Console.WriteLine(sample.Multiply(1.1, 2.2));
-            Console.WriteLine(sample.Print());
+            String input;
+            while (true)
+            {
+                input = Console.ReadLine();
+                Console.WriteLine(sample.Eval(input));
+            }
         }
     }
 }

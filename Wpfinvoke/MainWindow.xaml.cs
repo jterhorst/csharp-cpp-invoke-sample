@@ -31,16 +31,10 @@ namespace Wpfinvoke
         {
             cliwrapper.wrapper sample;
             sample = new cliwrapper.wrapper();
-            double ad = Convert.ToDouble(a.Text);
-            double bd = Convert.ToDouble(b.Text);
-            double resadd = sample.Add(ad, bd);
-            double ressub = sample.Subtract(ad, bd);
-            double resmul = sample.Multiply(ad, bd);
-            double resdiv = sample.Divide(ad, bd);
-            string message = "Add: "+Convert.ToString(resadd)+"\nSubtract: "+ Convert.ToString(ressub)+"\nMultiply: "+ Convert.ToString(resmul) + "\nDivide: " + Convert.ToString(resdiv);
-            string caption = sample.Print();
+            string message = Convert.ToString(sample.Eval(input.Text));
+            string caption = "Result";
             MessageBoxButton buttons = MessageBoxButton.OK;
-            var result=MessageBox.Show(message, caption, buttons);
+            MessageBox.Show(message, caption, buttons);
         }
     }
 }

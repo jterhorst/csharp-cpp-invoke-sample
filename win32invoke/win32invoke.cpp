@@ -3,15 +3,18 @@
 
 #include "stdafx.h"
 #include<iostream>
+#include<string>
 #include"unmanaged.h"
 using namespace std;
 
 int main()
 {
 	Cunmanaged unmanaged;
-	cout << unmanaged.Add(1.1, 2.2) << endl;
-	cout << unmanaged.Subtract(1.1, 2.2) << endl;
-	cout << unmanaged.Multiply(1.1, 2.2) << endl;
+	string input;
+	while (cin >> input)
+	{
+		cout << unmanaged.Eval(input) << endl;
+	}
     return 0;
 }
 

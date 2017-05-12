@@ -23,7 +23,6 @@ unmanaged(win32/native C++/dll) <-- win32invoke(win32/native C++/console)
 
 ## Screenshot
 
-![image](https://cloud.githubusercontent.com/assets/22494815/25910859/5d4f13ec-35e4-11e7-8179-f64df419605f.png)
 ![qq 20170511204800](https://cloud.githubusercontent.com/assets/22494815/25949734/24e09dee-368b-11e7-8af9-70fe9bffa097.jpg)
 
 ## Authors

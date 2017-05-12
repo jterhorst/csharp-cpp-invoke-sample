@@ -13,6 +13,9 @@
 #include<vector>
 #include<cmath>
 #include<algorithm>
+#include<cctype>
+#include<cmath>
+#include<stdexcept>
 using namespace std;
 // This class is exported from the unmanaged.dll
 class UNMANAGED_API Cunmanaged {
@@ -21,6 +24,20 @@ public:
 	double Eval(string x)
 	{
 		input = x;
+		try
+		{
+			for (const auto &i : x)
+			{
+				if ((!isdigit(i)) && (i != '.') && (i != '+') && (i != '-') && (i != '*') && (i != '/') && (i != '%') && (i != '(') && (i != ')'))
+				{
+					throw std::exception("Not a valid string!");
+				}
+			}
+		}
+		catch (exception err)
+		{
+			return 0;
+		}
 		return Break_expr(0, input.size() - 1);
 	}
 private:
@@ -73,7 +90,10 @@ private:
 	double Break_expr(int left, int right) {
 		if (If_expr(left, right))
 			return Break_expr(left + 1, right - 1);
-		int breaker = -1, breaker1 = -1, breaker2 = -1;
+		int breaker = -1, breaker1 = -1, breaker2 = -1, breaker3 = -1;
+		breaker3 = R_Find_expr(left, right, '%');
+		if (breaker3 != -1)
+			return fmod(Break_expr(left, breaker3 - 1), Break_expr(breaker3 + 1, right));
 		breaker1 = R_Find_expr(left, right, '+');
 		breaker2 = R_Find_expr(left, right, '-');
 		breaker = max(breaker1, breaker2);

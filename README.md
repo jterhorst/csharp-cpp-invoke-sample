@@ -21,6 +21,10 @@ unmanaged(win32/native C++/dll) <-- win32invoke(win32/native C++/console)
 
 + Visual Studio 2017 with C# + Native Cpp + Cpp/CLI support
 
+## Additional Notes
+
++ If you want to know how to use C# to invoke something like **std::future/std::mutex/std::thread**, please search ```PImpl``` by your self. [**However, if you need an example, feel free to open an issue here**]
+
 ## Screenshot
 
 ![qq 20170511204800](https://cloud.githubusercontent.com/assets/22494815/25949734/24e09dee-368b-11e7-8af9-70fe9bffa097.jpg)

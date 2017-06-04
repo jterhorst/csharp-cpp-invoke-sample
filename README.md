@@ -23,7 +23,7 @@ unmanaged(win32/native C++/dll) <-- win32invoke(win32/native C++/console)
 
 ## Additional Notes
 
-+ If you want to know how to use C# to invoke something like **std::future/std::mutex/std::thread**, please search ```PImpl``` by your self. [**However, if you need an example, feel free to open an issue here**]
++ If you want to know how to use C# to invoke something like **std::future/std::mutex/std::thread**, please search ```PImpl``` by yourself. [**However, if you need an example, feel free to open an issue here**]
 
 ## Screenshot
 

@@ -19,7 +19,7 @@ unmanaged(win32/native C++/dll) <-- win32invoke(win32/native C++/console)
 
 ## Prerequisites
 
-+ Visual Studio 2017 with C# + Native Cpp + Cpp/CLI support
++ Visual Studio 2017 with C# (.Net Framework v4.7) + Native Cpp + Cpp/CLI support
 
 ## Additional Notes
 

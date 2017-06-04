@@ -1,5 +1,7 @@
 # C# C++ invoke sample
 
+[![Build status](https://ci.appveyor.com/api/projects/status/maq5ueiqpnfv1f9r/branch/master)](https://ci.appveyor.com/project/NutshellySima/csharp-cpp-invoke-sample/branch/master)
+
 C# C++ C++/CLI invoke samples
 
 ## What's this?

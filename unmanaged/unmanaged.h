@@ -18,10 +18,10 @@
 #include<stdexcept>
 using namespace std;
 // This class is exported from the unmanaged.dll
-class UNMANAGED_API Cunmanaged {
+class Cunmanaged {
 public:
-	Cunmanaged(void) {};
-	double Eval(string x)
+	UNMANAGED_API Cunmanaged(void) {};
+	UNMANAGED_API double Eval(string x)
 	{
 		input = x;
 		try

@@ -52,7 +52,7 @@ private:
 			if (input[i] == ')')
 				--count;
 			if (count == 0 && (input[i] == '+' || input[i] == '-' || input[i] == '*' ||
-				input[i] == '/'))
+				input[i] == '/'|| input[i]=='%'))
 				return 0;
 		}
 		if (flag == 1)
